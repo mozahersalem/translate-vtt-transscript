@@ -1,0 +1,16 @@
+# Core dependencies
+python-docx
+google-cloud-translate
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+
+# Utility dependencies
+requests
+urllib3
+lxml
+setuptools
+
+# Virtual environment and package management
+pipenv
