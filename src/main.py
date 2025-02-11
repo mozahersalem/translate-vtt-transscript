@@ -10,7 +10,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 output_dir = os.path.abspath('../dist')
 os.makedirs(output_dir, exist_ok=True)  # Ensure the folder exists
 
-input_vtt_path = './files/transcript.vtt'
+input_vtt_path = './files/copy_your_transscript_here.vtt'
 output_vtt_path = os.path.join(output_dir, 'Modified_transcript')
 merged_vtt_path = os.path.join(output_dir, 'DE_EN_transcript.vtt')
 docx_path = os.path.join(output_dir, 'transcript.docx')

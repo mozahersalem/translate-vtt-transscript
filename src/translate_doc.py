@@ -40,7 +40,7 @@ def translate_doc(input_docx_path, output_docx_path, target_language='en'):
                 index = future_to_index[future]
                 try:
                     translated_texts[index] = future.result()
-                    # print(f"✅ Translated paragraph {index+1}/{len(paragraphs)}: {translated_texts[index][:50]}...")
+                    print(f"✅ Translated paragraph {index+1}/{len(paragraphs)}: {translated_texts[index][:50]}...")
                 except Exception as e:
                     print(f"⚠️ ERROR: {e}")
                     translated_texts[index] = paragraphs[index].text  # Keep original text on failure
