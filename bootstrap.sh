@@ -6,6 +6,13 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
     echo "➡️ Run 'source venv/bin/activate' first."
     exit 1
 else
-    echo "✅ Virtual environment detected. Installing dependencies..."
-    pip install -r requirements.txt
+    echo "✅ Virtual environment detected."
 fi
+
+# Install dependencies
+echo "📦 Installing dependencies from requirements.txt..."
+pip install --no-cache-dir -r requirements.txt
+
+# Run the application
+echo "🚀 Running the application..."
+python3 src/main.py
