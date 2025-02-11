@@ -27,7 +27,7 @@ This project provides a set of scripts to process, translate, and merge VTT (Web
 
 2. Install the required Python libraries:
     ```sh
-    pip install -r requirements.txt
+    ./bootstrap.sh
     ```
 
 3. Set up Google Cloud Translate API credentials:
